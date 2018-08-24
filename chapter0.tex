@@ -1,0 +1,49 @@
+%!TEX root = root.tex
+
+%% FRONTMATTER
+\begin{frontmatter}
+
+% generate title
+\maketitle
+
+\begin{abstract}
+
+The notion that DNA changes could drive the growth of cancer was first speculated more than a century ago, and has acquired overwhelming evidence in the past several decades. The recent decrease in cost of next-generation sequencing has spurred the growth of cancer sequencing studies that catalog mutations observed in cancer. However, the vast majority of mutations in cancer do not increase the fitness of cancer cells. As a consequence, computational methods have become essential to distinguish the specific driver mutations implicated in cancer by leveraging statistical patterns of genetic variation observed across many cancer samples.
+
+Here, I introduce several new computational methods to analyze cancer drivers at different levels of resolution -- including at the gene (20/20+), protein region (HotMAPS), and mutation (CHASMplus) level. I use these methods to interrogate fundamental questions regarding cancer driver mutations, such as their cancer type specificity, commonness or rarity, and the characteristics of oncogenes and tumor suppressor genes. Different types of cancer varied substantially on the precise cancer driver genes and the balance of oncogenes versus tumor suppressor genes, but shared clusters of cancer driver genes were seen in cancer types with a common cell of origin. Results also indicate a prominent emerging role for rare driver mutations, suggesting interpretation of a cancer genome will need to be increasingly personalized, as a patient's driver mutation may have not been previously observed. 
+
+I also probe the efficacy of computational methods, which is difficult because there is no accepted gold-standard. I first analyze consequences expected analytically, and then compare existing methods on newly developed benchmarks. I found many prior computational methods do not appropriately model the heterogeneity of mutations expected by chance.
+
+The recent completion of The Cancer Genome Atlas has provided a unique capability to understand cancer at an unprecedented scale. I comprehensively discover both cancer driver genes and mutations across nearly 10,000 cancers from 33 cancer types. This revealed 299 cancer driver genes and $>$3,000 driver mutations. Although this expansive analysis found 59 novel genes not previously associated as cancer drivers, some evidence points to diminishing returns for future driver discovery.
+
+
+
+\vfill
+\noindent {\bf{Primary Reader and Advisor:}} Dr. Rachel Karchin \\
+{\bf{Secondary Reader:}} Dr. Joel Bader
+\end{abstract}
+
+\begin{acknowledgment}
+
+This work could not have been accomplished isolation. I am greatly thankful for the countless hours of mentorship, encouragement, and inspiration provided by Rachel Karchin. I also appreciate the valuable advice provided by Noushin Niknafs, Chris Douville, and Violeta Beleva-Guthrie, especially when I just started in the lab. My lively experiences in the lab also would not have been the same without Rohit Bhattacharya, Ashok Sivakumar, Lily Zheng, and Melody Shao.
+
+I would also like to thank collaborators who were essential in my projects. Bert Vogelstein's insights into cancer drivers were critical for formulating 20/20+. The CHASMplus analysis would not be the same without Nick Roberts' and Neha Nanda's experimental perspective on ATM. I especially thank Matthew Bailey and Eduard Porta-Pardo for their creativity, insights, enthusiasm, and camaraderie when analyzing cancer drivers as part of the driver's group of The Cancer Genome Atlas PancanAtlas.
+
+\end{acknowledgment}
+
+\begin{dedication}
+ 
+To \textit{my parents}
+
+\end{dedication}
+
+% generate table of contents
+\tableofcontents
+
+% generate list of tables
+\listoftables
+
+% generate list of figures
+\listoffigures
+
+\end{frontmatter}

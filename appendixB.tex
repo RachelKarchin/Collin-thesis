@@ -1,0 +1,10 @@
+%!TEX root = root.tex
+\begingroup             
+\let\clearpage\relax
+
+\chapter{Pan-cancer mutation dataset}
+\label{app:pancan_mutations}
+
+The pancancer dataset consists of 729,205 small somatic variants encompassing 7,916 distinct samples from 34 specific cancer types by merging data in published whole-exome or whole-genome sequencing studies used by TUSON (\href{www.elledgelab.med.harvard.edu/wp-content/uploads/2013/11/Mutation_Dataset.txt.zip}{Dataset}) \cite{RN71} and Mutsig (\href{www.tumorportal.org/load/data/per_ttype_mafs/PanCan.maf}{Tumor portal}) \cite{RN14} and removing duplicate samples in both studies. Any studies that did not report silent mutations were removed. Data in refs. \cite{RN71} and \cite{RN14} originated from The Cancer Genome Atlas, International Cancer Genome Consortium, the Catalogue of Somatic Mutations in Cancer database \cite{RN97}, and dbGAP. We did not see evidence of batch effects by data source in the number of variants per tumor type, single-nucleotide mutation spectra, or specific mutation consequence types. We further applied quality control to this data by filtering out hypermutated samples (>1,000 intragenic small somatic variants) \cite{RN25}, and regions prone to mutation calling artifacts [any sequencing read mappability warning cataloged in the University of California, Santa Cruz (UCSC), Genome Browser]. The cleaned pancancer dataset is \href{http://karchinlab.org/data/Protocol/pancan-mutation-set-from-Tokheim-2016.txt.gz}{here}. The CRAVAT webserver (version 3.0) was used to automatically retrieve the mappability warning codes. Gene names were standardized to HUGO Gene Nomenclature Committee through converting previous symbols and synonyms to the accepted gene name (downloaded January 29, 2015: \href{ftp://ftp.ebi.ac.uk/pub/databases/genenames/locus_groups/protein-coding_gene.txt.gz}{here}). 
+
+\endgroup
